@@ -1,0 +1,63 @@
+
+
+
+#loader-container{
+	width: 90px;
+	height: 90px;
+	position: relative;
+	top: -50px;
+	left: 790px;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+
+}
+
+
+.loader-div{
+	
+	width: calc(100% - 16px);
+	height: calc(100% - 16px);
+	border: 8px solid #162534;
+	border-top: 8px solid #09f;
+	border-radius: 50%;
+	animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate{
+	100% {transform: rotate(360deg);}
+}
+
+<!--header for swtching corner-->
+
+#main-header{
+			z-index: 0;
+			vertical-align: middle;
+			text-align: center;
+			background-color: black;
+			color:black;
+			padding: 10px;
+			border-radius: 50% 50% 50% 50%;
+			}
+
+header{
+	z-index: 0;
+	background: #333;
+	width: 200px;
+	height:115px;
+	position: relative;
+	left: 480px;
+	top:0px;
+	animation-name: Myanimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes Myanimation {
+
+	0% {background-color: blue; left:480px; top: 0px; border-radius: 0 0 0 0;}
+	25%{background-color: cyan; left: 850px;top: 0px;border-radius: 50% 0 0 0;}
+	50%{background-color: violet;left: 850px;top: 350px;border-radius: 50% 50% 0 0;}
+	75%{background-color: magenta;left: 480px;top: 350px;border-radius: 50% 50% 50% 0;}
+	100%{background-color:indigo;left: 480px; top: 0px;border-radius: 50% 50% 50% 50%;}
+}  
